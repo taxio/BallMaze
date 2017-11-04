@@ -6,11 +6,6 @@ using WebSocketSharp;
 using WebSocketSharp.Net;
 using WebSocketSharp.Server;
 
-//public static class SensorRotation{
-//	public static float x = 0f;
-//	public static float z = 0f;
-//}
-
 public class fieldManager : MonoBehaviour {
 
 	float x = 0f;
