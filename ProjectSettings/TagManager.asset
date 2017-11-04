@@ -6,6 +6,7 @@ TagManager:
   tags:
   - goal
   - field
+  - clearText
   layers:
   - Default
   - TransparentFX
