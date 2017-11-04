@@ -50,7 +50,6 @@ public class fieldManager : MonoBehaviour {
 		x = LogWS.x * 90f / 9.8f;
 
 		transform.rotation = Quaternion.Euler (x, 0, z);
-		Debug.Log (LogWS.x);
 	}
 }
 
@@ -59,7 +58,6 @@ public class LogWS : WebSocketBehavior{
 	public static float z = 0f;
 
 	protected override void OnMessage(MessageEventArgs e){
-		Debug.Log (e.Data);
 		string[] data = e.Data.Split (',');
 		z = float.Parse (data [0]);
 		x = float.Parse (data [1]);

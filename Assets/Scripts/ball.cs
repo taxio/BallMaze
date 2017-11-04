@@ -15,7 +15,7 @@ public class ball : MonoBehaviour {
 	void Update () {
 
 		// 落下判定
-		if (transform.position.y < -20) {
+		if (transform.position.y < -20 && isGoal == false) {
 			Destroy (gameObject);
 		}
 
